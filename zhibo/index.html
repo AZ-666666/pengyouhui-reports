@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>鹏友会直播链路深度诊断报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#F5F7FA;color:#333;line-height:1.6;font-size:14px;}
+.container{max-width:1120px;margin:0 auto;padding:20px;}
+.header{background:linear-gradient(135deg,#1a237e 0%,#296BEF 100%);color:white;border-radius:16px;padding:32px 40px;margin-bottom:24px;}
+.header h1{font-size:24px;font-weight:700;margin-bottom:10px;}
+.header .meta{font-size:13px;opacity:0.85;display:flex;flex-wrap:wrap;gap:12px;}
+.header .tag{background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:12px;font-size:12px;}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;}
+.sc{background:white;border-radius:12px;padding:18px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.sc .lb{font-size:12px;color:#888;margin-bottom:2px;}
+.sc .vl{font-size:22px;font-weight:700;color:#1a237e;}
+.sc .ch{font-size:12px;margin-top:2px;}
+.up{color:#76C84D;}.down{color:#FF6D5E;}.orange{color:#FFAE19;}
+.sec{background:white;border-radius:12px;padding:24px 28px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.sec h2{font-size:17px;font-weight:700;color:#1a237e;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid #EEF4FF;}
+.rc{border-radius:10px;padding:14px 18px;margin-bottom:10px;}
+.rh{background:#FFF5F5;border-left:5px solid #FF6D5E;}
+.rm{background:#FFF8E6;border-left:5px solid #FFAE19;}
+.rg{background:#F0FFF4;border-left:5px solid #76C84D;}
+.rc .rt{font-weight:700;font-size:14px;margin-bottom:4px;}
+.rc .rd{font-size:13px;color:#555;}
+.rh .rt{color:#FF6D5E;}.rm .rt{color:#FFAE19;}.rg .rt{color:#76C84D;}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+th{background:#296BEF;color:white;padding:8px 10px;text-align:left;font-weight:600;white-space:nowrap;}
+td{padding:7px 10px;border-bottom:1px solid #E8E8E8;}
+tr:hover td{background:#F8FAFF;}
+.num{text-align:right;font-variant-numeric:tabular-nums;}
+.hl td{background:#EEF4FF;}
+.red{color:#FF6D5E;font-weight:600;}.green{color:#76C84D;font-weight:600;}
+.ana{background:#F8FAFF;border-radius:8px;padding:14px 18px;margin:10px 0;font-size:13px;}
+.ana strong{color:#296BEF;}
+.sug{background:#FFF8E6;border-left:3px solid #FFAE19;border-radius:0 8px 8px 0;padding:12px 18px;margin:10px 0;font-size:13px;}
+.sug strong{color:#FFAE19;}
+.sr{display:flex;align-items:center;gap:12px;margin:6px 0;}
+.sl{width:80px;font-size:13px;color:#666;}
+.sv{font-size:13px;font-weight:600;min-width:70px;}
+@media(max-width:768px){.sg{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>🔍 鹏友会直播链路深度诊断报告</h1>
+  <div class="meta">
+    <span>📅 2026-05-14 ~ 2026-05-27（近14天）</span>
+    <span>🏢 鹏友会(广州)传媒科技有限公司</span>
+    <span class="tag">食品饮料 / 休闲食品</span>
+    <span class="tag">直播链路</span>
+    <span>📋 对比期：2026-04-30 ~ 2026-05-13</span>
+  </div>
+</div>
+
+<div class="sg">
+  <div class="sc"><div class="lb">14天消耗</div><div class="vl">569,416</div><div class="ch up">环比+54.8%</div></div>
+  <div class="sc"><div class="lb">日均消耗</div><div class="vl">40,673</div><div class="ch up">环比+54.8%</div></div>
+  <div class="sc"><div class="lb">下单ROI</div><div class="vl">2.04</div><div class="ch down">环比-6.2%</div></div>
+  <div class="sc"><div class="lb">客单价</div><div class="vl">124.4</div><div class="ch down">环比-1.2%</div></div>
+  <div class="sc"><div class="lb">CTR</div><div class="vl">1.98%</div><div class="ch down">环比-24.7%</div></div>
+  <div class="sc"><div class="lb">CVR</div><div class="vl">4.44%</div><div class="ch up">环比+7.5%</div></div>
+  <div class="sc"><div class="lb">竞价CPM</div><div class="vl">53.6</div><div class="ch down">环比-15.3%</div></div>
+  <div class="sc"><div class="lb">下单金额</div><div class="vl">1,164,414</div><div class="ch up">环比+45.2%</div></div>
+</div>
+
+<!-- 诊断结论 -->
+<div class="sec">
+  <h2>⚡ 诊断结论总览</h2>
+  <div class="rc rh"><div class="rt">🔴 CTR大幅下降24.7%，远逊于大盘(-1.2%)，素材吸引力严重衰退</div><div class="rd">近14天CTR仅1.98%，较前14天下降0.65pp。大盘CTR为2.89%且仅降1.2%，鹏友会CTR低于大盘0.90pp，差距显著。素材衰退是核心问题。</div></div>
+  <div class="rc rh"><div class="rt">🔴 CVR仅4.44%，大幅低于大盘8.19%，直播间转化效率差距大</div><div class="rd">鹏友会CVR比大盘低3.75pp，不到大盘的55%。虽环比微升7.5%，但大盘升12.9%，鹏友会CVR改善幅度也落后。直播间货盘和承接效率需重点提升。</div></div>
+  <div class="rc rm"><div class="rt">🟡 下单ROI为2.04，低于大盘2.49，差距0.45</div><div class="rd">ROI差距主要来自CVR劣势。鹏友会客单价124.4元高于大盘104.8元(+19.6元)，但CVR差距过大，高客单价未能弥补转化效率不足。</div></div>
+  <div class="rc rm"><div class="rt">🟡 CPM为53.6元，低于大盘72.7元，竞价竞争力偏弱</div><div class="rd">CPM比大盘低19.1元，虽降低了获客成本，但也意味着出价能力不足。CPM环比下降15.3%，大盘仅降6.9%，鹏友会竞价竞争力下滑更快。</div></div>
+  <div class="rc rm"><div class="rt">🟡 疆小娃中式糕点ROI仅1.79，为最低效主力SPU</div><div class="rd">疆小娃中式糕点消耗93,975元(占16.5%)但ROI仅1.79，为6大主力SPU中最低。混合口味米糕ROI=1.87也偏低。两个SPU合计消耗166,958元(占29.3%)，拖累整体效率。</div></div>
+  <div class="rc rg"><div class="rt">🟢 消耗环比+54.8%，远超大盘+8.3%，放量能力突出</div><div class="rd">鹏友会消耗增速是大盘的6.6倍，基建扩张积极(广告数+59.9% vs 大盘-10.6%)，素材数+22.7% vs 大盘+0.1%，展现出强劲的放量动能。</div></div>
+  <div class="rc rg"><div class="rt">🟢 客单价124.4元高于大盘104.8元，环比仅-1.2%远优于大盘-14.1%</div><div class="rd">鹏友会客单价高于大盘18.7%，且环比基本持平(-1.2%)，而大盘客单价大幅下降14.1%。鹏友会货盘定价策略更稳定。</div></div>
+</div>
+
+<!-- 14天趋势 -->
+<div class="sec">
+  <h2>📈 近14天逐日趋势</h2>
+  <div class="sr"><span class="sl">消耗趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,3.0 21.5,23.8 43.1,33.0 64.6,31.3 86.2,34.9 107.7,35.7 129.2,35.8 150.8,41.0 172.3,38.7 193.8,40.7 215.4,35.9 236.9,39.6 258.5,36.3 280.0,36.4" fill="none" stroke="#296BEF" stroke-width="2"/><circle cx="280.0" cy="36.4" r="3" fill="#296BEF"/></svg><span class="sv">35,236元</span></div>
+  <div class="sr"><span class="sl">CTR趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,16.8 21.5,30.9 43.1,3.0 64.6,40.4 86.2,34.4 107.7,39.9 129.2,39.0 150.8,41.0 172.3,39.3 193.8,22.7 215.4,24.5 236.9,19.3 258.5,31.8 280.0,31.6" fill="none" stroke="#FF6D5E" stroke-width="2"/><circle cx="280.0" cy="31.6" r="3" fill="#FF6D5E"/></svg><span class="sv down">1.90%</span></div>
+  <div class="sr"><span class="sl">CVR趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,14.9 21.5,25.9 43.1,41.0 64.6,11.1 86.2,21.8 107.7,5.4 129.2,17.4 150.8,14.8 172.3,3.0 193.8,35.8 215.4,19.2 236.9,30.5 258.5,11.3 280.0,19.9" fill="none" stroke="#FF6D5E" stroke-width="2"/><circle cx="280.0" cy="19.9" r="3" fill="#FF6D5E"/></svg><span class="sv">4.48%</span></div>
+  <div class="sr"><span class="sl">ROI趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,16.5 21.5,41.0 43.1,12.8 64.6,8.4 86.2,12.6 107.7,3.0 129.2,9.9 150.8,16.4 172.3,5.1 193.8,19.5 215.4,10.1 236.9,13.8 258.5,16.5 280.0,15.9" fill="none" stroke="#76C84D" stroke-width="2"/><circle cx="280.0" cy="15.9" r="3" fill="#76C84D"/></svg><span class="sv up">2.04</span></div>
+  <div class="sr"><span class="sl">客单价趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,16.7 21.5,22.1 43.1,12.9 64.6,13.0 86.2,14.6 107.7,12.9 129.2,3.0 150.8,12.7 172.3,21.2 193.8,27.8 215.4,23.8 236.9,28.3 258.5,41.0 280.0,30.6" fill="none" stroke="#FFAE19" stroke-width="2"/><circle cx="280.0" cy="30.6" r="3" fill="#FFAE19"/></svg><span class="sv orange">122.1元</span></div>
+  <div class="sr"><span class="sl">CPM趋势</span><svg width="280" height="44" style="vertical-align:middle;"><polyline points="0.0,3.0 21.5,19.4 43.1,31.8 64.6,38.9 86.2,39.5 107.7,35.5 129.2,41.0 150.8,38.8 172.3,32.1 193.8,41.0 215.4,25.9 236.9,32.8 258.5,24.8 280.0,33.4" fill="none" stroke="#FFAE19" stroke-width="2"/><circle cx="280.0" cy="33.4" r="3" fill="#FFAE19"/></svg><span class="sv orange">51.1元</span></div>
+  <table>
+    <tr><th>日期</th><th>消耗(元)</th><th>CTR</th><th>CVR</th><th>ROI</th><th>客单价</th><th>下单金额</th><th>CPM</th><th>转化量</th></tr>
+    <tr><td>05/14</td><td class="num">93,897</td><td class="num ">2.37%</td><td class="num ">4.81%</td><td class="num">2.03</td><td class="num">124.9</td><td class="num">190,381</td><td class="num ">70.3</td><td class="num">1522</td></tr><tr><td>05/15</td><td class="num">57,327</td><td class="num orange">1.92%</td><td class="num ">4.08%</td><td class="num">1.62</td><td class="num">123.8</td><td class="num">93,115</td><td class="num ">60.0</td><td class="num">749</td></tr><tr><td>05/16</td><td class="num">41,210</td><td class="num ">2.81%</td><td class="num red">3.08%</td><td class="num">2.09</td><td class="num">125.7</td><td class="num">86,093</td><td class="num ">52.1</td><td class="num">683</td></tr><tr><td>05/17</td><td class="num">44,082</td><td class="num red">1.62%</td><td class="num ">5.06%</td><td class="num">2.16</td><td class="num">125.7</td><td class="num">95,257</td><td class="num orange">47.7</td><td class="num">757</td></tr><tr><td>05/18</td><td class="num">37,917</td><td class="num orange">1.81%</td><td class="num ">4.35%</td><td class="num">2.09</td><td class="num">125.3</td><td class="num">79,341</td><td class="num orange">47.3</td><td class="num">631</td></tr><tr><td>05/19</td><td class="num">36,359</td><td class="num red">1.63%</td><td class="num ">5.44%</td><td class="num">2.25</td><td class="num">125.7</td><td class="num">81,822</td><td class="num orange">49.8</td><td class="num">649</td></tr><tr><td>05/20</td><td class="num">36,341</td><td class="num red">1.66%</td><td class="num ">4.65%</td><td class="num">2.14</td><td class="num">127.7</td><td class="num">77,626</td><td class="num orange">46.3</td><td class="num">606</td></tr><tr><td>05/21</td><td class="num">27,126</td><td class="num red">1.60%</td><td class="num ">4.82%</td><td class="num">2.03</td><td class="num">125.7</td><td class="num">55,069</td><td class="num orange">47.7</td><td class="num">438</td></tr><tr><td>05/22</td><td class="num">31,123</td><td class="num red">1.65%</td><td class="num ">5.60%</td><td class="num">2.22</td><td class="num">124.0</td><td class="num">68,947</td><td class="num ">51.9</td><td class="num">555</td></tr><tr><td>05/23</td><td class="num">27,654</td><td class="num ">2.18%</td><td class="num red">3.42%</td><td class="num">1.98</td><td class="num">122.7</td><td class="num">54,716</td><td class="num orange">46.3</td><td class="num">446</td></tr><tr><td>05/24</td><td class="num">36,121</td><td class="num ">2.12%</td><td class="num ">4.53%</td><td class="num">2.13</td><td class="num">123.5</td><td class="num">77,058</td><td class="num ">55.9</td><td class="num">621</td></tr><tr><td>05/25</td><td class="num">29,569</td><td class="num ">2.29%</td><td class="num orange">3.78%</td><td class="num">2.07</td><td class="num">122.6</td><td class="num">61,294</td><td class="num ">51.5</td><td class="num">496</td></tr><tr><td>05/26</td><td class="num">35,456</td><td class="num orange">1.89%</td><td class="num ">5.05%</td><td class="num">2.03</td><td class="num">120.0</td><td class="num">71,893</td><td class="num ">56.6</td><td class="num">599</td></tr><tr class="hl"><td>05/27</td><td class="num">35,236</td><td class="num orange">1.90%</td><td class="num ">4.48%</td><td class="num">2.04</td><td class="num">122.1</td><td class="num">71,802</td><td class="num ">51.1</td><td class="num">586</td></tr>
+  </table>
+  <div class="ana">
+    <strong>趋势解读：</strong>14天日均消耗40,672元。5/14消耗最高(93,897元)但ROI仅2.03，5/19 ROI最高(2.25)。CTR从5/14的2.37%持续降至5/27的1.90%，素材衰退趋势明显。客单价整体稳定在124-126元区间，5/27为125.4元。CPM从5/14的70.3元降至5/27的50.7元，竞价竞争力持续走弱。
+  </div>
+</div>
+
+<!-- 基建与基操 -->
+<div class="sec">
+  <h2>🏗️ 基建与基操诊断</h2>
+  <table>
+    <tr><th>基建指标</th><th>鹏友会</th><th>前14天</th><th>鹏友会环比</th><th>大盘环比</th></tr>
+    <tr><td>有消耗广告数</td><td class="num">1,102</td><td class="num">689</td><td class="num green">+59.9%</td><td class="num red">-10.6%</td></tr>
+    <tr><td>有消耗账户数</td><td class="num">56</td><td class="num">49</td><td class="num green">+14.3%</td><td class="num">+1.4%</td></tr>
+    <tr><td>素材数</td><td class="num">9,268</td><td class="num">7,552</td><td class="num green">+22.7%</td><td class="num">+0.1%</td></tr>
+    <tr><td>户均广告数</td><td class="num">19.7</td><td class="num">14.1</td><td class="num green">+40.0%</td><td class="num">-</td></tr>
+    <tr><td>户均素材数</td><td class="num">165.5</td><td class="num">154.1</td><td class="num green">+7.4%</td><td class="num">-</td></tr>
+  </table>
+  <div class="ana">
+    <strong>基建评估：</strong>鹏友会基建扩张远超大盘——广告数+59.9%(大盘-10.6%)，素材数+22.7%(大盘+0.1%)。放量基建充足，但需关注CTR下降24.7%是否与素材质量稀释有关。大盘广告数缩减10.6%而鹏友会逆势扩张，说明投放意愿强，但需确保新增基建的效果质量。
+  </div>
+  <div class="sug">
+    <strong>💡 建议：</strong>①基建扩张的同时需严控素材质量，避免低效素材稀释整体CTR ②对新增广告设置效果门槛(ROI>1.5) ③参考大盘广告数缩减趋势，适当精简低效广告
+  </div>
+</div>
+
+<!-- 直播间转化 -->
+<div class="sec">
+  <h2>📺 直播间转化表现</h2>
+  <table>
+    <tr><th>直播间</th><th>消耗</th><th>CTR</th><th>CVR</th><th>ROI</th><th>客单价</th><th>下单金额</th><th>下单次数</th><th>CPM</th><th>广告数</th></tr>
+    <tr><td>鹏哥零食推荐官</td><td class="num">198,193</td><td class="num">2.38%</td><td class="num">3.49%</td><td class="num ">2.06</td><td class="num">126.0</td><td class="num">409,031</td><td class="num">3247</td><td class="num">51.1</td><td class="num">325</td></tr><tr><td>亚鹏-甄选推荐</td><td class="num">110,496</td><td class="num">1.36%</td><td class="num">6.40%</td><td class="num ">2.42</td><td class="num">131.3</td><td class="num">267,849</td><td class="num">2040</td><td class="num">47.0</td><td class="num">2</td></tr><tr><td>鹏哥优选推荐官</td><td class="num">69,548</td><td class="num">1.71%</td><td class="num">5.36%</td><td class="num ">1.89</td><td class="num">126.4</td><td class="num">131,606</td><td class="num">1041</td><td class="num">61.2</td><td class="num">130</td></tr><tr><td>鹏哥好物精选推荐官</td><td class="num">52,543</td><td class="num">1.66%</td><td class="num">6.36%</td><td class="num ">2.06</td><td class="num">128.0</td><td class="num">108,270</td><td class="num">846</td><td class="num">65.6</td><td class="num">92</td></tr><tr><td>鹏哥精选食品</td><td class="num">50,234</td><td class="num">1.97%</td><td class="num">4.61%</td><td class="num ">1.82</td><td class="num">109.4</td><td class="num">91,461</td><td class="num">836</td><td class="num">54.6</td><td class="num">132</td></tr><tr><td>鹏哥优选官</td><td class="num">48,778</td><td class="num">2.94%</td><td class="num">3.63%</td><td class="num ">1.79</td><td class="num">108.3</td><td class="num">87,208</td><td class="num">805</td><td class="num">64.6</td><td class="num">183</td></tr><tr><td>鹏哥美食推荐</td><td class="num">37,119</td><td class="num">1.64%</td><td class="num">4.22%</td><td class="num ">1.77</td><td class="num">126.3</td><td class="num">65,572</td><td class="num">519</td><td class="num">49.5</td><td class="num">199</td></tr><tr><td>鹏哥甄选食味</td><td class="num">1,551</td><td class="num">2.69%</td><td class="num">4.45%</td><td class="num ">1.55</td><td class="num">126.2</td><td class="num">2,398</td><td class="num">19</td><td class="num">97.9</td><td class="num">15</td></tr><tr><td>鹏哥健康好品</td><td class="num">901</td><td class="num">2.49%</td><td class="num">2.32%</td><td class="num red">1.02</td><td class="num">114.7</td><td class="num">918</td><td class="num">8</td><td class="num">65.0</td><td class="num">14</td></tr><tr><td>鹏哥糕点推荐官</td><td class="num">54</td><td class="num">4.53%</td><td class="num">2.27%</td><td class="num ">1.86</td><td class="num">99.9</td><td class="num">100</td><td class="num">1</td><td class="num">55.4</td><td class="num">10</td></tr>
+  </table>
+  <div class="ana">
+    <strong>直播间差异分析：</strong><br>
+    • <strong>鹏哥零食推荐官</strong>：最大消耗(198,193元，占34.8%)，ROI=2.06，客单价126.0元，CTR=2.38%为最高<br>
+    • <strong>亚鹏-甄选推荐</strong>：消耗110,496元，ROI=2.42为最高，CVR=6.40%远超其他，客单价131.3元最高，但CTR仅1.36%<br>
+    • <strong>鹏哥优选推荐官</strong>：消耗69,548元，CVR=5.36%，ROI=1.89偏低<br>
+    • <strong>鹏哥好物精选推荐官</strong>：消耗52,543元，CVR=6.36%，ROI=2.06，表现均衡<br>
+    • <strong>鹏哥精选食品</strong>：消耗50,234元，ROI=1.82，客单价仅109.4元为最低<br>
+    • <strong>鹏哥优选官</strong>：消耗48,778元，CTR=2.94%最高，但CVR=3.63%偏低，ROI=1.79
+  </div>
+  <div class="sug">
+    <strong>💡 建议：</strong>①亚鹏-甄选推荐CVR最高(6.40%)，可加大投放发挥高转化优势 ②鹏哥优选官高CTR(2.94%)但低CVR(3.63%)，需优化直播间承接 ③鹏哥精选食品客单价最低(109.4元)，考虑调整货盘结构
+  </div>
+</div>
+
+<!-- SPU维度 -->
+<div class="sec">
+  <h2>🛒 SPU商品维度分析</h2>
+  <h3 style="font-size:14px;color:#1a237e;margin-bottom:8px;">主力SPU汇总（ROI和客单价为加权计算）</h3>
+  <table>
+    <tr><th>SPU名称</th><th>消耗</th><th>ROI</th><th>CTR</th><th>CVR</th><th>客单价</th><th>下单金额</th><th>下单次数</th><th>转化量</th></tr>
+    <tr><td>混合口味中式糕点</td><td class="num">279,885</td><td class="num green">2.18</td><td class="num">2.05%</td><td class="num">4.57%</td><td class="num">128.2</td><td class="num">611,196</td><td class="num">4769</td><td class="num">4756</td></tr><tr><td>疆小娃中式糕点</td><td class="num">93,975</td><td class="num red">1.79</td><td class="num">-</td><td class="num">-</td><td class="num">109.2</td><td class="num">168,366</td><td class="num">1542</td><td class="num">1542</td></tr><tr><td>混合口味米糕</td><td class="num">72,983</td><td class="num ">1.87</td><td class="num">1.70%</td><td class="num">5.28%</td><td class="num">126.5</td><td class="num">136,509</td><td class="num">1079</td><td class="num">1079</td></tr><tr><td>疆小娃混合口味米糕</td><td class="num">65,428</td><td class="num ">1.96</td><td class="num">1.63%</td><td class="num">6.02%</td><td class="num">128.0</td><td class="num">128,242</td><td class="num">1002</td><td class="num">1002</td></tr><tr><td>混合口味切糕</td><td class="num">36,408</td><td class="num green">2.12</td><td class="num">-</td><td class="num">-</td><td class="num">122.9</td><td class="num">77,207</td><td class="num">628</td><td class="num">620</td></tr><tr><td>糕点套装</td><td class="num">20,616</td><td class="num ">1.97</td><td class="num">-</td><td class="num">-</td><td class="num">125.2</td><td class="num">40,697</td><td class="num">325</td><td class="num">325</td></tr>
+  </table>
+  <h3 style="font-size:14px;color:#1a237e;margin:16px 0 8px;">SPU × 直播间交叉分析</h3>
+  <table>
+    <tr><th>SPU名称</th><th>直播间</th><th>消耗</th><th>ROI</th><th>CTR</th><th>CVR</th><th>客单价</th><th>下单金额</th><th>下单次数</th></tr>
+    <tr><td>混合口味中式糕点</td><td>鹏哥零食推荐官</td><td class="num">168,476</td><td class="num ">2.03</td><td class="num">2.51%</td><td class="num">3.39%</td><td class="num">125.9</td><td class="num">342,329</td><td class="num">2720</td></tr><tr><td>混合口味中式糕点</td><td>亚鹏-甄选推荐</td><td class="num">110,496</td><td class="num green">2.42</td><td class="num">1.36%</td><td class="num">6.40%</td><td class="num">131.3</td><td class="num">267,849</td><td class="num">2040</td></tr><tr><td>混合口味米糕</td><td>鹏哥优选推荐官</td><td class="num">68,345</td><td class="num ">1.91</td><td class="num">1.71%</td><td class="num">5.37%</td><td class="num">126.3</td><td class="num">130,517</td><td class="num">1033</td></tr><tr><td>疆小娃混合口味米糕</td><td>鹏哥好物精选推荐官</td><td class="num">52,543</td><td class="num ">2.06</td><td class="num">1.66%</td><td class="num">6.36%</td><td class="num">128.0</td><td class="num">108,270</td><td class="num">846</td></tr><tr><td>疆小娃中式糕点</td><td>鹏哥优选官</td><td class="num">48,728</td><td class="num red">1.79</td><td class="num">2.94%</td><td class="num">3.63%</td><td class="num">108.3</td><td class="num">87,208</td><td class="num">805</td></tr><tr><td>疆小娃中式糕点</td><td>鹏哥精选食品</td><td class="num">43,514</td><td class="num ">1.81</td><td class="num">1.90%</td><td class="num">4.92%</td><td class="num">109.7</td><td class="num">78,759</td><td class="num">718</td></tr><tr><td>混合口味切糕</td><td>鹏哥零食推荐官</td><td class="num">29,689</td><td class="num green">2.17</td><td class="num">1.82%</td><td class="num">4.00%</td><td class="num">126.5</td><td class="num">64,505</td><td class="num">510</td></tr><tr><td>糕点套装</td><td>鹏哥美食推荐</td><td class="num">20,616</td><td class="num ">1.97</td><td class="num">1.73%</td><td class="num">4.09%</td><td class="num">125.2</td><td class="num">40,697</td><td class="num">325</td></tr><tr><td>疆小娃混合口味米糕</td><td>鹏哥美食推荐</td><td class="num">11,682</td><td class="num red">1.62</td><td class="num">1.49%</td><td class="num">4.71%</td><td class="num">127.6</td><td class="num">18,882</td><td class="num">148</td></tr><tr><td>混合口味切糕</td><td>鹏哥精选食品</td><td class="num">6,720</td><td class="num ">1.89</td><td class="num">2.28%</td><td class="num">3.34%</td><td class="num">107.6</td><td class="num">12,702</td><td class="num">118</td></tr><tr><td>混合口味米糕</td><td>鹏哥美食推荐</td><td class="num">4,638</td><td class="num red">1.29</td><td class="num">1.49%</td><td class="num">3.98%</td><td class="num">130.3</td><td class="num">5,992</td><td class="num">46</td></tr><tr><td>疆小娃中式糕点</td><td>鹏哥甄选食味</td><td class="num">1,551</td><td class="num red">1.55</td><td class="num">2.69%</td><td class="num">4.45%</td><td class="num">126.2</td><td class="num">2,398</td><td class="num">19</td></tr>
+  </table>
+  <div class="ana">
+    <strong>SPU分析：</strong><br>
+    • <strong>混合口味中式糕点</strong>：最大SPU(消耗279,885元，占49.2%)，ROI=2.18表现最优，客单价128.2元。在鹏哥零食推荐官(ROI=2.03)和亚鹏-甄选推荐(ROI=2.42)两个直播间投放<br>
+    • <strong>疆小娃中式糕点</strong>：消耗93,975元，ROI=1.79为最低🔴，客单价109.2元也偏低，需优化<br>
+    • <strong>混合口味米糕</strong>：消耗72,983元，ROI=1.87偏低，CVR=5.28%尚可但CTR=1.70%偏低<br>
+    • <strong>疆小娃混合口味米糕</strong>：消耗65,428元，ROI=1.96，CVR=6.02%较高但CTR=1.63%偏低<br>
+    • <strong>混合口味切糕</strong>：消耗36,408元，ROI=2.12，表现稳健
+  </div>
+  <div class="rc rm"><div class="rt">🟡 疆小娃中式糕点ROI=1.79为最低，混合口味米糕ROI=1.87也偏低，合计消耗166,958元(29.3%)</div><div class="rd">两个低效SPU消耗占比近三成，拖累整体ROI。建议优化这两个SPU的素材和直播间承接，或考虑缩减预算分配。</div></div>
+  <div class="sug">
+    <strong>💡 SPU优化建议：</strong><br>
+    1. 混合口味中式糕点ROI=2.18为最优，可加大投放，特别是亚鹏-甄选推荐直播间(ROI=2.42)<br>
+    2. 疆小娃中式糕点(ROI=1.79)为最低效SPU，需提升CVR或调整货盘，优化直播间话术<br>
+    3. 混合口味米糕(ROI=1.87)需提升CTR(当前1.70%)，优化素材前3秒钩子<br>
+    4. 混合口味切糕(ROI=2.12)表现稳健，可维持并适度增量
+  </div>
+</div>
+
+<!-- 大盘对比 -->
+<div class="sec">
+  <h2>📊 食品饮料直播大盘对比</h2>
+  <table>
+    <tr><th>指标</th><th>鹏友会</th><th>大盘均值</th><th>差距</th><th>鹏友会环比</th><th>大盘环比</th><th>环比差距</th></tr>
+    <tr><td><strong>CTR</strong></td><td class="num">1.98%</td><td class="num">2.89%</td><td class="num red">-0.90pp</td><td class="num">-24.7%</td><td class="num">-1.2%</td><td class="num">-23.4pp</td></tr><tr><td><strong>CVR</strong></td><td class="num">4.44%</td><td class="num">8.19%</td><td class="num red">-3.75pp</td><td class="num">+7.5%</td><td class="num">+12.9%</td><td class="num">-5.3pp</td></tr><tr><td><strong>下单ROI</strong></td><td class="num">2.04</td><td class="num">2.49</td><td class="num red">-0.44</td><td class="num">-6.2%</td><td class="num">-3.3%</td><td class="num">-2.9pp</td></tr><tr><td><strong>客单价(元)</strong></td><td class="num">124.4元</td><td class="num">104.8元</td><td class="num green">+19.6元</td><td class="num">-1.2%</td><td class="num">-14.1%</td><td class="num">+12.9pp</td></tr><tr><td><strong>竞价CPM(元)</strong></td><td class="num">53.6元</td><td class="num">72.7元</td><td class="num green">-19.1元</td><td class="num">-15.3%</td><td class="num">-6.9%</td><td class="num">-8.5pp</td></tr><tr><td><strong>消耗环比(%)</strong></td><td class="num">54.8%</td><td class="num">8.3%</td><td class="num green">+46.6%</td><td class="num">-</td><td class="num">-</td><td class="num">-</td></tr><tr><td><strong>广告数环比(%)</strong></td><td class="num">59.9%</td><td class="num">-10.6%</td><td class="num green">+70.6%</td><td class="num">-</td><td class="num">-</td><td class="num">-</td></tr><tr><td><strong>素材数环比(%)</strong></td><td class="num">22.7%</td><td class="num">0.1%</td><td class="num green">+22.6%</td><td class="num">-</td><td class="num">-</td><td class="num">-</td></tr>
+  </table>
+  <div class="ana">
+    <strong>大盘对比核心结论：</strong><br>
+    🔴 <strong>双率(CTR/CVR)显著落后大盘</strong>：CTR低0.90pp，CVR低3.75pp，是鹏友会与大盘差距最大的两个指标。CTR环比下降24.7%远差于大盘-1.2%，说明鹏友会素材衰退问题远比行业普遍<br>
+    🟡 <strong>ROI低于大盘0.45</strong>：主要受CVR拖累。客单价高于大盘18.7%是优势，但CVR不到大盘的55%，高客单价无法弥补低转化<br>
+    🟡 <strong>CPM低于大盘19.1元</strong>：获客成本优势但竞价竞争力不足，CPM环比降幅(-15.3%)也大于大盘(-6.9%)<br>
+    🟢 <strong>基建扩张远超大盘</strong>：广告数+59.9% vs 大盘-10.6%，素材数+22.7% vs 大盘+0.1%，放量意愿和执行力突出<br>
+    🟢 <strong>客单价稳定性远优于大盘</strong>：环比-1.2% vs 大盘-14.1%，鹏友会货盘定价策略更稳健
+  </div>
+  <div class="sug">
+    <strong>💡 大盘对比优化建议：</strong><br>
+    1. <strong>P0-缩小CTR差距</strong>：鹏友会CTR(1.98%)远低于大盘(2.89%)，需紧急提升素材吸引力至大盘水平，重点优化视频前3秒钩子<br>
+    2. <strong>P0-缩小CVR差距</strong>：CVR(4.44%)不到大盘(8.19%)的55%，需系统性提升直播间转化效率——优化货盘结构、主播话术、直播间承接流程<br>
+    3. <strong>P1-提升CPM竞争力</strong>：CPM低于大盘19元，需适当提升出价或优化素材质量恢复竞价竞争力<br>
+    4. <strong>发挥客单价优势</strong>：客单价高于大盘18.7%且更稳定，若能提升CVR至大盘水平，ROI将显著超越大盘
+  </div>
+</div>
+
+<!-- 行动清单 -->
+<div class="sec">
+  <h2>🎯 综合行动清单</h2>
+  <table>
+    <tr><th style="width:55px;">优先级</th><th style="width:100px;">模块</th><th>问题</th><th>建议动作</th></tr>
+    <tr><td class="red">P0</td><td>素材/CTR</td><td>CTR仅1.98%，低于大盘0.90pp，环比-24.7%</td><td>①紧急更新视频素材，参考5/14(CTR=2.37%)和5/16(2.81%)特征 ②优化前3秒钩子 ③严控新增素材质量，避免基建扩张稀释CTR</td></tr>
+    <tr><td class="red">P0</td><td>直播间/CVR</td><td>CVR仅4.44%，不到大盘8.19%的55%</td><td>①系统性优化直播间承接效率 ②参考亚鹏-甄选推荐CVR=6.40%的策略 ③优化货盘结构和主播话术</td></tr>
+    <tr><td class="orange">P1</td><td>SPU</td><td>疆小娃中式糕点ROI=1.79最低，混合口味米糕ROI=1.87偏低</td><td>①两个低效SPU合计消耗29.3%，需优化或缩减 ②疆小娃中式糕点提升CVR或调整货盘 ③混合口味米糕提升CTR ④将预算向混合口味中式糕点(ROI=2.18)倾斜</td></tr>
+    <tr><td class="orange">P1</td><td>竞价/CPM</td><td>CPM低于大盘19.1元，环比-15.3%远差于大盘</td><td>①排查出价策略调整 ②适当提升出价恢复竞价竞争力 ③优化素材质量提升eCPM</td></tr>
+    <tr><td class="orange">P1</td><td>基建</td><td>广告数+59.9%但CTR下降24.7%，扩张与效率矛盾</td><td>①对新增广告设置效果门槛(ROI>1.5) ②精简低效广告 ③确保新增素材质量不低于存量</td></tr>
+    <tr style="color:#296BEF;"><td>P2</td><td>客单价</td><td>客单价124.4元高于大盘，是核心优势</td><td>①维持高客单价货盘策略 ②若CVR提升至大盘水平，ROI将显著超越大盘 ③可测试更高客单价商品</td></tr>
+  </table>
+</div>
+
+</div>
+<script>(function(){var _h=0,_t;function s(){var h=document.documentElement.scrollHeight;if(h>0&&h!==_h){_h=h;window.parent.postMessage({type:"iframe-resize",height:h},"*")}}function d(){clearTimeout(_t);_t=setTimeout(s,150)}if(document.readyState==="complete")s();else window.addEventListener("load",s);if(typeof ResizeObserver!=="undefined")new ResizeObserver(d).observe(document.documentElement)})();</script></body>
+</html>
